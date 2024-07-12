@@ -1,0 +1,36 @@
+Add new car in showroom 
+update Car records
+Delete an car by Car_Name
+fetch all car records matched by given type
+
+car has follwing attribute
+	private int Car_no;// unique identifier for each car ,auto generated starts from 1
+	private String Car_name;
+	private String Car_color;
+	private String Car_fuel_type;//petrol ,diesel ,ev
+	private String Car_Type;//enum sedan,suv,HatchBack,sports
+	private long  Car_price;
+	private String Car_transmission;//ex.automatic/manual
+	public int getCar_no() {
+		return Car_no; 
+
+
+
+you can use relational database to save resources
+1.none of the field in car table is nullable
+2.create payload will have fields like _car_Name,car_type
+3.Car_no(auto generated) & update car according to car_no
+4.there should be validation on create,delete and update payload,name should not be blank
+5.Rest url should be named as per rest best practice
+6.rest url should be name as per rest guidelines(201 for resource creation ,404 for not found,200 for ok)
+7.error handling in case for failure
+
+
+Mandatory Operations
+1.Implementation of add car
+2.Implementation of update and delete car
+3.Payload validation
+4.implementation of getr car by Car_transmission
+5.proper response codes for get and post 
+5.error handling
+6.service and repository and entity layers
